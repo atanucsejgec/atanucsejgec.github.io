@@ -1,0 +1,611 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Atanu Biswas | Android Developer, AWS Cloud & AI/ML Engineer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800;900&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <!-- Grid View Scale (Temporary Inspector) -->
+  <link rel="stylesheet" href="grid-overlay.css">
+</head>
+
+<body>
+  <!-- Canvas Scroll Animation Background -->
+  <canvas id="canvas"></canvas>
+
+  <!-- Overlay Container for Sections -->
+  <div class="content-wrapper">
+
+    <!-- Header / Navigation (Hidden on Frame 1 / until scrolling up) -->
+    <header class="navbar navbar-hidden">
+      <div class="nav-container">
+        <a href="#" class="nav-brand">
+          <svg class="brand-icon" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect x="3" y="3" width="16" height="16" rx="4" stroke="#ff4757" stroke-width="2.5" />
+            <rect x="13" y="13" width="16" height="16" rx="4" stroke="#ffffff" stroke-width="2.5" />
+            <circle cx="11" cy="11" r="2" fill="#ff4757" />
+            <circle cx="21" cy="21" r="2" fill="#ffffff" />
+          </svg>
+          <div class="brand-text">
+            <span class="brand-title">ATANU BISWAS</span>
+            <span class="brand-sub">ENGINEER & INNOVATOR</span>
+          </div>
+        </a>
+
+        <nav class="nav-links">
+          <a href="#about" class="nav-link">ABOUT ME</a>
+          <a href="#skills" class="nav-link">SKILLS</a>
+          <a href="#projects" class="nav-link">PROJECTS</a>
+        </nav>
+
+        <a href="#contact" class="nav-btn-contact">
+          <span>CONTACT</span>
+          <div class="arrow-circle">
+            <svg viewBox="0 0 24 24" width="14" height="14" stroke="currentColor" stroke-width="2.5" fill="none"
+              stroke-linecap="round" stroke-linejoin="round">
+              <line x1="7" y1="17" x2="17" y2="7"></line>
+              <polyline points="7 7 17 7 17 17"></polyline>
+            </svg>
+          </div>
+        </a>
+      </div>
+    </header>
+
+    <!-- SECTION 1: HERO (DESIGNED ACCORDING TO REFERENCE IMAGE) -->
+    <section class="section hero-section" id="hero">
+      <div class="hero-split-layout">
+
+        <!-- EDITORIAL INTRODUCTION CARD (From Reference Image) -->
+        <div class="editorial-intro-card scroll-in-out-trigger kinetic-group">
+          <div class="editorial-header">
+            <span class="editorial-kicker kinetic-line">Hello, I am</span>
+            <span class="editorial-subkicker kinetic-line">A passionate software engineer</span>
+          </div>
+
+          <h1 class="editorial-title kinetic-title kinetic-line">
+            Atanu Biswas<span class="editorial-dot">.</span>
+          </h1>
+
+          <!-- Role Chips / Rotator -->
+          <div class="editorial-roles-wrap kinetic-line">
+            <div class="role-badge-row">
+              <span class="role-chip active"><span class="chip-dot"></span>Android Developer</span>
+              <span class="role-chip"><span class="chip-dot"></span>AWS Cloud Engineer</span>
+              <span class="role-chip"><span class="chip-dot"></span>Python Developer</span>
+            </div>
+            <div class="role-badge-row">
+              <span class="role-chip"><span class="chip-dot"></span>PostgreSQL Database</span>
+              <span class="role-chip"><span class="chip-dot"></span>DSA Practitioner (C++)</span>
+              <span class="role-chip"><span class="chip-dot"></span>AI/ML Engineer</span>
+            </div>
+          </div>
+
+          <p class="editorial-desc kinetic-line">
+            <span class="kinetic-line">Passionate software engineer building resilient AWS cloud infrastructures,</span>
+            <span class="kinetic-line">high-performance native Android applications, optimized PostgreSQL databases,</span>
+            <span class="kinetic-line">robust algorithms in C++, and cutting-edge AI/ML models.</span>
+          </p>
+
+          <!-- Circular Social Icons (GitHub, LinkedIn, Telegram, Email) -->
+          <div class="editorial-social-row kinetic-line">
+            <a href="https://github.com/atanucsejgec" target="_blank" rel="noopener noreferrer" class="social-circle-btn" aria-label="GitHub">
+              <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor">
+                <path
+                  d="M12 2A10 10 0 0 0 2 12c0 4.42 2.87 8.17 6.84 9.5.5.08.66-.23.66-.5v-1.69c-2.77.6-3.36-1.34-3.36-1.34-.46-1.16-1.11-1.47-1.11-1.47-.91-.62.07-.6.07-.6 1 .07 1.53 1.03 1.53 1.03.87 1.52 2.34 1.07 2.91.83.1-.65.35-1.09.63-1.34-2.22-.25-4.55-1.11-4.55-4.92 0-1.11.38-2 1.03-2.71-.1-.25-.45-1.29.1-2.64 0 0 .84-.27 2.75 1.02.79-.22 1.65-.33 2.5-.33.85 0 1.71.11 2.5.33 1.91-1.29 2.75-1.02 2.75-1.02.55 1.35.2 2.39.1 2.64.65.71 1.03 1.6 1.03 2.71 0 3.82-2.34 4.66-4.57 4.91.36.31.69.92.69 1.85V21c0 .27.16.59.67.5C19.14 20.16 22 16.42 22 12A10 10 0 0 0 12 2z" />
+              </svg>
+            </a>
+            <a href="https://www.linkedin.com/in/atanucsejgec" target="_blank" rel="noopener noreferrer" class="social-circle-btn" aria-label="LinkedIn">
+              <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor">
+                <path
+                  d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.28 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.75M6.46 10.9v8.37H9.2V10.9H6.46M7.83 6.75a1.64 1.64 0 1 0 0 3.28 1.64 1.64 0 0 0 0-3.28z" />
+              </svg>
+            </a>
+            <a href="https://t.me/Atanucse" target="_blank" rel="noopener noreferrer" class="social-circle-btn" aria-label="Telegram">
+              <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor">
+                <path
+                  d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm4.64 6.8c-.15 1.58-.8 5.42-1.13 7.19-.14.75-.42 1-.68 1.03-.58.05-1.02-.38-1.58-.75-.88-.58-1.38-.94-2.23-1.5-.99-.65-.35-1.01.22-1.59.15-.15 2.71-2.48 2.76-2.69.01-.03.01-.14-.07-.19-.08-.05-.19-.02-.27 0-.12.03-1.99 1.27-5.62 3.72-.53.36-1.01.54-1.44.53-.47-.01-1.38-.27-2.06-.49-.83-.27-1.49-.42-1.43-.88.03-.24.37-.49 1.02-.75 3.99-1.74 6.66-2.88 7.99-3.44 3.8-1.58 4.59-1.86 5.11-1.87.11 0 .37.03.54.17.14.12.18.28.2.45-.02.07-.02.13-.04.22z" />
+              </svg>
+            </a>
+            <a href="mailto:atanubiswas7450@gmail.com" class="social-circle-btn" aria-label="Email">
+              <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" />
+                <polyline points="22,6 12,13 2,6" />
+              </svg>
+            </a>
+          </div>
+
+          <!-- CTA Button & Looping Arrow (From Reference Image) -->
+          <div class="editorial-cta-wrap kinetic-line">
+            <a href="#projects" class="btn-editorial-coral">
+              Découvrir mon CV / Projects
+            </a>
+
+            <!-- Playful Hand-Drawn Looping Dashed Arrow (Pointing Up-Right to Person) -->
+            <svg class="editorial-dashed-arrow" viewBox="0 0 170 110" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M 10 55 C 40 85, 75 105, 85 75 C 95 45, 50 35, 60 75 C 70 115, 120 75, 150 15" 
+                    stroke="#ff4757" stroke-width="2.5" stroke-dasharray="5 5" stroke-linecap="round" />
+              <polygon points="156,8 141,18 153,26" fill="#ff4757" />
+            </svg>
+          </div>
+        </div>
+
+        <!-- RIGHT SIDE: CREDENTIALS & EXPERIENCE HUB -->
+        <div class="hero-right-column">
+          <div class="glass-card credentials-card scroll-in-out kinetic-group">
+            <div class="card-header-flex kinetic-line">
+              <div class="cred-header-left">
+                <h3 class="card-subtitle">CREDENTIALS & EXPERIENCE</h3>
+                <span class="cred-sub-caption">Engineering • Cloud • Academics</span>
+              </div>
+              <span class="gate-highlight-badge">
+                <span class="pulse-dot"></span>GATE '26
+              </span>
+            </div>
+
+            <!-- Tab Filter Pills -->
+            <div class="cred-tab-nav kinetic-line">
+              <button class="cred-tab-btn active" data-filter="all">All (5)</button>
+              <button class="cred-tab-btn" data-filter="experience">💼 Work (2)</button>
+              <button class="cred-tab-btn" data-filter="education">🎓 Education (2)</button>
+              <button class="cred-tab-btn" data-filter="achievements">🏆 GATE '26</button>
+            </div>
+
+            <!-- Scrollable Timeline / Feed -->
+            <div class="cred-feed-list">
+              <!-- Item 1: Crontel Technologies (Internship) -->
+              <div class="cred-item-card kinetic-line" data-category="experience">
+                <div class="cred-item-top">
+                  <div class="cred-item-icon-box exp-icon">
+                    <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2">
+                      <rect x="2" y="7" width="20" height="14" rx="2" ry="2"></rect>
+                      <path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path>
+                    </svg>
+                  </div>
+                  <div class="cred-item-meta">
+                    <div class="cred-title-row">
+                      <a href="https://www.crontel.com/" target="_blank" rel="noopener noreferrer" class="cred-link-title">
+                        Crontel Technologies
+                        <svg viewBox="0 0 24 24" width="12" height="12" stroke="currentColor" stroke-width="2.5" fill="none">
+                          <line x1="7" y1="17" x2="17" y2="7"></line>
+                          <polyline points="7 7 17 7 17 17"></polyline>
+                        </svg>
+                      </a>
+                      <span class="cred-badge-pill lime">2 Yrs Exp</span>
+                    </div>
+                    <span class="cred-role">App Developer & AWS Architecture</span>
+                    <span class="cred-time-loc">Internship • Cloud & Mobile Infrastructure</span>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Item 2: Smart Class Connect (Internship) -->
+              <div class="cred-item-card kinetic-line" data-category="experience">
+                <div class="cred-item-top">
+                  <div class="cred-item-icon-box exp-icon">
+                    <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2">
+                      <path d="M12 2L2 7l10 5 10-5-10-5z"></path>
+                      <path d="M2 17l10 5 10-5"></path>
+                      <path d="M2 12l10 5 10-5"></path>
+                    </svg>
+                  </div>
+                  <div class="cred-item-meta">
+                    <div class="cred-title-row">
+                      <a href="https://www.smartclassconnect.com/" target="_blank" rel="noopener noreferrer" class="cred-link-title">
+                        Smart Class Connect
+                        <svg viewBox="0 0 24 24" width="12" height="12" stroke="currentColor" stroke-width="2.5" fill="none">
+                          <line x1="7" y1="17" x2="17" y2="7"></line>
+                          <polyline points="7 7 17 7 17 17"></polyline>
+                        </svg>
+                      </a>
+                      <span class="cred-badge-pill sky">Frontend</span>
+                    </div>
+                    <span class="cred-role">UI/UX Designer & Frontend Developer</span>
+                    <span class="cred-time-loc">Interactive Design & Web Platform</span>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Item 3: GATE CS 2026 (Achievement) -->
+              <div class="cred-item-card kinetic-line gate-card-accent" data-category="achievements">
+                <div class="cred-item-top">
+                  <div class="cred-item-icon-box gate-icon">
+                    <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2">
+                      <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon>
+                    </svg>
+                  </div>
+                  <div class="cred-item-meta">
+                    <div class="cred-title-row">
+                      <span class="cred-name-bold">GATE CS 2026 Qualified</span>
+                      <span class="cred-score-pill">Score: 278</span>
+                    </div>
+                    <span class="cred-role">Graduate Aptitude Test in Engineering – Computer Science</span>
+                    <p class="cred-desc-snippet">Qualified Feb 8, 2026 • Score 278 • Strong proficiency in core CS</p>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Item 4: Jalpaiguri Government Engineering College (Education) -->
+              <div class="cred-item-card kinetic-line" data-category="education">
+                <div class="cred-item-top">
+                  <div class="cred-item-icon-box edu-icon">
+                    <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2">
+                      <path d="M22 10v6M2 10l10-5 10 5-10 5z"></path>
+                      <path d="M6 12v5c3 3 9 3 12 0v-5"></path>
+                    </svg>
+                  </div>
+                  <div class="cred-item-meta">
+                    <div class="cred-title-row">
+                      <span class="cred-name-bold">Jalpaiguri Govt. Engg. College</span>
+                      <span class="cred-badge-pill purple">2023 – 2027</span>
+                    </div>
+                    <span class="cred-role">Bachelor of Technology – Computer Science & Engineering</span>
+                    <span class="cred-time-loc">Jalpaiguri, West Bengal, India • Expected 2027</span>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Item 5: Bongaon High School (Education) -->
+              <div class="cred-item-card kinetic-line" data-category="education">
+                <div class="cred-item-top">
+                  <div class="cred-item-icon-box edu-icon">
+                    <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2">
+                      <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path>
+                      <path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path>
+                    </svg>
+                  </div>
+                  <div class="cred-item-meta">
+                    <div class="cred-title-row">
+                      <span class="cred-name-bold">Bongaon High School</span>
+                      <span class="cred-badge-pill amber">2020 — 2022</span>
+                    </div>
+                    <span class="cred-role">Higher Secondary (WBCHSE): 80% — Secondary (WBBSE): 85%</span>
+                    <span class="cred-time-loc">Bongaon, West Bengal, India</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- SECTION 2: WHO AM I ? -->
+    <section class="section about-section" id="about">
+      <div class="section-container">
+        <h2 class="section-title kinetic-title scroll-in-out">WHO AM I ?</h2>
+
+        <div class="about-grid">
+          <!-- Floating mini polaroid left -->
+          <div class="polaroid-card polaroid-left scroll-in-out stagger-2">
+            <div class="polaroid-img-box">
+              <img src="ezgif-264d2cc11ade905b-jpg/ezgif-frame-008.jpg" alt="Developer frame" />
+            </div>
+          </div>
+
+          <!-- Central Bio Card with Line-by-Line Cascade -->
+          <div class="glass-card bio-card scroll-in-out kinetic-group">
+            <p class="bio-para kinetic-line">
+              I am <strong>Atanu Biswas</strong>, a multi-faceted software engineer specialized in <strong>Android
+                Development</strong>, <strong>AWS Cloud Infrastructure</strong>, <strong>Python Backend
+                Architectures</strong>, and <strong>PostgreSQL Database Engineering</strong>.
+            </p>
+            <p class="bio-para kinetic-line">
+              Driven by computer science fundamentals, I actively practice <strong>Data Structures & Algorithms in
+                C++</strong> and train intelligent <strong>AI & Machine Learning</strong> models that solve high-impact
+              problems.
+            </p>
+            <p class="bio-para kinetic-line">
+              I bridge theoretical computer science with enterprise engineering: designing scalable cloud systems on
+              AWS, writing zero-latency algorithms, and crafting polished native mobile experiences.
+            </p>
+
+            <div class="bio-action kinetic-line">
+              <a href="#projects" class="btn-lime">
+                EXPLORE MY PROJECTS
+              </a>
+            </div>
+          </div>
+
+          <!-- Floating mini polaroid right -->
+          <div class="polaroid-card polaroid-right scroll-in-out stagger-4">
+            <div class="polaroid-img-box">
+              <img src="ezgif-264d2cc11ade905b-jpg/ezgif-frame-028.jpg" alt="Developer frame" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 3: MY SKILLS -->
+    <section class="section skills-section" id="skills">
+      <div class="section-container">
+        <h2 class="section-title kinetic-title scroll-in-out">TECHNICAL MASTERY</h2>
+
+        <div class="skills-main-layout">
+          <!-- Tech Icons Grid (6 Core Domains) -->
+          <div class="skills-card-grid kinetic-group">
+
+            <!-- Android / Kotlin -->
+            <div class="skill-tile kinetic-line">
+              <div class="tech-icon-box">
+                <svg viewBox="0 0 32 32" width="32" height="32" fill="#3DDC84">
+                  <path
+                    d="M8.2 9.5l-1.9-3.3c-.2-.3-.1-.7.2-.9.3-.2.7-.1.9.2l2 3.4c2-1 4.3-1.5 6.6-1.5s4.6.5 6.6 1.5l2-3.4c.2-.3.6-.4.9-.2.3.2.4.6.2.9l-1.9 3.3c3.6 2.2 6.1 5.9 6.6 10.2H2.6C3.1 15.4 5.6 11.7 8.2 9.5zM11.5 16c.8 0 1.5-.7 1.5-1.5S12.3 13 11.5 13 10 13.7 10 14.5s.7 1.5 1.5 1.5zm9 0c.8 0 1.5-.7 1.5-1.5S21.3 13 20.5 13s-1.5.7-1.5 1.5.7 1.5 1.5 1.5z" />
+                </svg>
+              </div>
+              <span class="skill-name">Android (Kotlin)</span>
+            </div>
+
+            <!-- AWS Cloud -->
+            <div class="skill-tile kinetic-line">
+              <div class="tech-icon-box">
+                <svg viewBox="0 0 32 32" width="32" height="32" fill="#FF9900">
+                  <path
+                    d="M16 4C9.4 4 4 9.4 4 16s5.4 12 12 12 12-5.4 12-12S22.6 4 16 4zm7 16.5c-.2.3-.5.4-.8.4-.2 0-.3 0-.5-.1-4-2.5-9-1.9-9.2-1.9-.4 0-.8-.3-.8-.7 0-.4.3-.8.7-.8.4 0 5.8-.7 10.2 2 .4.2.5.6.4 1.1zm1.3-3.4c-.3.4-.8.5-1.2.3-3.3-2-8.3-2.6-12.2-1.4-.5.1-1-.1-1.1-.6-.1-.5.1-1 .6-1.1 4.4-1.3 10-.7 13.6 1.5.4.3.5.8.3 1.3zm.1-3.6C20.5 11 14 10.8 10.2 12c-.6.2-1.2-.1-1.4-.7-.2-.6.1-1.2.7-1.4 4.4-1.3 11.6-1.1 16.1 1.6.5.3.7 1 .4 1.5-.3.6-.9.7-1.6.5z" />
+                </svg>
+              </div>
+              <span class="skill-name">AWS Cloud</span>
+            </div>
+
+            <!-- Python -->
+            <div class="skill-tile kinetic-line">
+              <div class="tech-icon-box">
+                <svg viewBox="0 0 32 32" width="32" height="32">
+                  <path fill="#3776AB"
+                    d="M15.9 3c-4.4 0-4.1 1.9-4.1 1.9l.1 2h4.2v.6H9.9C7 7.5 7 10.1 7 10.1v3.2c0 2.9 2.5 2.8 2.5 2.8h1.5v-2.1c0-2.4 2.1-2.4 2.1-2.4h4.1c1.9 0 1.9-1.8 1.9-1.8V5.6c0-2.6-3.2-2.6-3.2-2.6zm-1.3 1.3c.4 0 .7.3.7.7s-.3.7-.7.7-.7-.3-.7-.7.3-.7.7-.7z" />
+                  <path fill="#FFD43B"
+                    d="M16.1 29c4.4 0 4.1-1.9 4.1-1.9l-.1-2h-4.2v-.6h6.2c2.9 0 2.9-2.6 2.9-2.6v-3.2c0-2.9-2.5-2.8-2.5-2.8h-1.5v2.1c0 2.4-2.1 2.4-2.1 2.4h-4.1c-1.9 0-1.9 1.8-1.9 1.8v4.2c0 2.6 3.2 2.6 3.2 2.6zm1.3-1.3c-.4 0-.7-.3-.7-.7s.3-.7.7-.7.7.3.7.7-.3.7-.7.7z" />
+                </svg>
+              </div>
+              <span class="skill-name">Python</span>
+            </div>
+
+            <!-- PostgreSQL -->
+            <div class="skill-tile kinetic-line">
+              <div class="tech-icon-box">
+                <svg viewBox="0 0 32 32" width="32" height="32" fill="#336791">
+                  <path
+                    d="M16 2.5C8.5 2.5 2.5 8.5 2.5 16S8.5 29.5 16 29.5 29.5 23.5 29.5 16 23.5 2.5 16 2.5zm0 4.2c3.5 0 6.4 2.2 7.5 5.3-1.6-.7-3.4-.8-5.3-.3-2.6.7-4.5 2.7-4.9 5.3-.2 1.3.1 2.6.7 3.7-2.7-1.3-4.6-4-4.6-7.2 0-3.7 3-6.8 6.6-6.8zm5.7 17.5c-1.7 1.1-3.6 1.7-5.7 1.7-4.6 0-8.5-3-9.8-7.2 1.6 1 3.5 1.5 5.5 1.3 3.1-.4 5.7-2.6 6.5-5.6.3-1.1.3-2.3 0-3.3 2.1 2.5 3.5 5.8 3.5 9.5 0 1.3-.2 2.5-.7 3.6z" />
+                </svg>
+              </div>
+              <span class="skill-name">PostgreSQL</span>
+            </div>
+
+            <!-- C++ (DSA) -->
+            <div class="skill-tile kinetic-line">
+              <div class="tech-icon-box">
+                <svg viewBox="0 0 32 32" width="32" height="32" fill="#00599C">
+                  <path
+                    d="M16 3L3 10.5v11L16 29l13-7.5v-11L16 3zm-2.8 18.2c-3.1 0-5.4-2.2-5.4-5.2s2.3-5.2 5.4-5.2c1.7 0 3 .6 3.9 1.7l-1.5 1.3c-.6-.7-1.4-1.1-2.4-1.1-1.9 0-3.2 1.4-3.2 3.3s1.3 3.3 3.2 3.3c1 0 1.8-.4 2.4-1.1l1.5 1.3c-.9 1.1-2.2 1.7-3.9 1.7zm8.4-4.2h1.6v1.9h-1.6v1.6h-1.9v-1.6h-1.6V17h1.6v-1.6h1.9v1.6zm5 0h1.6v1.9h-1.6v1.6h-1.9v-1.6h-1.6V17h1.6v-1.6h1.9v1.6z" />
+                </svg>
+              </div>
+              <span class="skill-name">C++ (DSA)</span>
+            </div>
+
+            <!-- AI / Machine Learning -->
+            <div class="skill-tile kinetic-line">
+              <div class="tech-icon-box">
+                <svg viewBox="0 0 32 32" width="32" height="32" fill="#FF6F61">
+                  <path
+                    d="M16 2a5 5 0 0 0-4.9 4H9a3 3 0 0 0-3 3v2.1A5 5 0 0 0 2 16a5 5 0 0 0 4 4.9V23a3 3 0 0 0 3 3h2.1A5 5 0 0 0 16 30a5 5 0 0 0 4.9-4H23a3 3 0 0 0 3-3v-2.1A5 5 0 0 0 30 16a5 5 0 0 0-4-4.9V9a3 3 0 0 0-3-3h-2.1A5 5 0 0 0 16 2zm0 4a3 3 0 0 1 3 3v.1a3 3 0 0 1-6 0V9a3 3 0 0 1 3-3zm-7 5h14a1 1 0 0 1 1 1v2.1a5 5 0 0 0-3 2.9H11a5 5 0 0 0-3-2.9V12a1 1 0 0 1 1-1zm7 4a3 3 0 1 1 0 6 3 3 0 0 1 0-6zm-7 4h14a1 1 0 0 1 1 1v2.1a3 3 0 0 1-3 3h-2.1a5 5 0 0 0-5.8 0H11a3 3 0 0 1-3-3V20a1 1 0 0 1 1-1z" />
+                </svg>
+              </div>
+              <span class="skill-name">AI / ML</span>
+            </div>
+
+          </div>
+
+          <!-- Years / Disciplines Stat Card -->
+          <div class="glass-card experience-stat-card scroll-in-out stagger-4">
+            <div class="stat-number">6</div>
+            <div class="stat-label">
+              <span>Core</span>
+              <strong style="color: #ff4757;">Disciplines</strong>
+              <span>Mastered</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Additional Technologies Strip -->
+        <div class="additional-skills-wrap scroll-in-out stagger-5">
+          <h4 class="additional-title">INFRASTRUCTURE & ECOSYSTEM</h4>
+          <div class="additional-badges">
+            <span class="badge-item">Docker</span>
+            <span class="badge-item">FastAPI</span>
+            <span class="badge-item">Kubernetes</span>
+            <span class="badge-item">PyTorch</span>
+            <span class="badge-item">TensorFlow</span>
+            <span class="badge-item">Scikit-Learn</span>
+            <span class="badge-item">Room DB</span>
+            <span class="badge-item">Jetpack Compose</span>
+            <span class="badge-item">Linux</span>
+            <span class="badge-item">Git / GitHub</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 4: PROJECTS / RECENT WORKS -->
+    <section class="section projects-section" id="projects">
+      <div class="section-container">
+        <div class="section-heading-row">
+          <h2 class="section-title kinetic-title scroll-in-out">ENGINEERED PROJECTS</h2>
+        </div>
+
+        <div class="projects-grid kinetic-group">
+          <!-- Project 1: Android -->
+          <div class="glass-card project-card kinetic-line">
+            <div class="project-preview">
+              <div class="project-tag" style="color: #3ddc84; border-color: rgba(61,220,132,0.3);">Android</div>
+              <div class="preview-backdrop" style="background: linear-gradient(135deg, #0d2818, #05140b);">
+                <div class="mockup-header">
+                  <span class="dot red"></span>
+                  <span class="dot yellow"></span>
+                  <span class="dot green"></span>
+                </div>
+                <div class="mockup-content">
+                  <h4 class="mockup-title">Native Android Hub</h4>
+                  <p class="mockup-desc">Kotlin, Jetpack Compose & Clean Arch</p>
+                </div>
+              </div>
+            </div>
+            <div class="project-details">
+              <h3 class="project-name">PulseFit Native Mobile</h3>
+              <p class="project-desc">
+                High-performance native Android application engineered with Jetpack Compose, Kotlin Coroutines, Room
+                offline caching, and MVVM Clean Architecture.
+              </p>
+              <div class="project-tags">
+                <span style="color: #3ddc84; border-color: rgba(61,220,132,0.3);">Kotlin</span>
+                <span style="color: #3ddc84; border-color: rgba(61,220,132,0.3);">Compose</span>
+                <span style="color: #3ddc84; border-color: rgba(61,220,132,0.3);">Coroutines</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 2: AWS & PostgreSQL -->
+          <div class="glass-card project-card kinetic-line">
+            <div class="project-preview">
+              <div class="project-tag" style="color: #ff9900; border-color: rgba(255,153,0,0.3);">AWS Cloud</div>
+              <div class="preview-backdrop" style="background: linear-gradient(135deg, #2b1704, #120902);">
+                <div class="mockup-header">
+                  <span class="dot red"></span>
+                  <span class="dot yellow"></span>
+                  <span class="dot green"></span>
+                </div>
+                <div class="mockup-content">
+                  <h4 class="mockup-title">Serverless Cloud Engine</h4>
+                  <p class="mockup-desc">AWS Lambda, PostgreSQL RDS & S3</p>
+                </div>
+              </div>
+            </div>
+            <div class="project-details">
+              <h3 class="project-name">CloudScale Serverless API</h3>
+              <p class="project-desc">
+                Zero-cold-start microservices architecture deployed on AWS Lambda, utilizing Amazon RDS PostgreSQL with
+                connection pooling, automated backups, and IAM security.
+              </p>
+              <div class="project-tags">
+                <span style="color: #ff9900; border-color: rgba(255,153,0,0.3);">AWS</span>
+                <span style="color: #ff9900; border-color: rgba(255,153,0,0.3);">PostgreSQL</span>
+                <span style="color: #ff9900; border-color: rgba(255,153,0,0.3);">Python</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 3: AI/ML & C++ -->
+          <div class="glass-card project-card kinetic-line">
+            <div class="project-preview">
+              <div class="project-tag" style="color: #ff4757; border-color: rgba(255,71,87,0.3);">AI / ML</div>
+              <div class="preview-backdrop" style="background: linear-gradient(135deg, #2c0b0e, #140506);">
+                <div class="mockup-header">
+                  <span class="dot red"></span>
+                  <span class="dot yellow"></span>
+                  <span class="dot green"></span>
+                </div>
+                <div class="mockup-content">
+                  <h4 class="mockup-title">Neural Vision Pipeline</h4>
+                  <p class="mockup-desc">Deep Learning & C++ Inference Engine</p>
+                </div>
+              </div>
+            </div>
+            <div class="project-details">
+              <h3 class="project-name">NeuralInference AI Engine</h3>
+              <p class="project-desc">
+                High-throughput computer vision and deep learning inference server built with Python/PyTorch and
+                optimized with high-performance C++ algorithmic modules.
+              </p>
+              <div class="project-tags">
+                <span style="color: #ff4757; border-color: rgba(255,71,87,0.3);">PyTorch</span>
+                <span style="color: #ff4757; border-color: rgba(255,71,87,0.3);">C++ DSA</span>
+                <span style="color: #ff4757; border-color: rgba(255,71,87,0.3);">FastAPI</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 5: CONTACT / LET'S HAVE A CHAT -->
+    <section class="section contact-section" id="contact">
+      <div class="section-container">
+        <h2 class="section-title kinetic-title scroll-in-out">LET'S CONNECT</h2>
+
+        <div class="contact-card-wrap scroll-in-out">
+          <!-- Direct Contact Channels Quick Bar -->
+          <div class="contact-quick-channels kinetic-line" style="display: flex; justify-content: center; gap: 12px; flex-wrap: wrap; margin-bottom: 24px;">
+            <a href="mailto:atanubiswas7450@gmail.com" class="role-chip" style="font-size: 0.86rem; padding: 8px 18px; text-decoration: none;">
+              <span class="chip-dot"></span>atanubiswas7450@gmail.com
+            </a>
+            <a href="https://t.me/Atanucse" target="_blank" rel="noopener noreferrer" class="role-chip" style="font-size: 0.86rem; padding: 8px 18px; text-decoration: none;">
+              <span class="chip-dot"></span>Telegram: @Atanucse
+            </a>
+            <a href="https://www.linkedin.com/in/atanucsejgec" target="_blank" rel="noopener noreferrer" class="role-chip" style="font-size: 0.86rem; padding: 8px 18px; text-decoration: none;">
+              <span class="chip-dot"></span>LinkedIn: atanucsejgec
+            </a>
+            <a href="https://github.com/atanucsejgec" target="_blank" rel="noopener noreferrer" class="role-chip" style="font-size: 0.86rem; padding: 8px 18px; text-decoration: none;">
+              <span class="chip-dot"></span>GitHub: atanucsejgec
+            </a>
+          </div>
+
+          <form class="glass-card contact-form kinetic-group"
+            onsubmit="event.preventDefault(); alert('Thank you for reaching out, Atanu will get back to you soon!');">
+            <div class="form-row kinetic-line">
+              <div class="form-group">
+                <label for="name">Your Name</label>
+                <input type="text" id="name" placeholder="John Doe" required />
+              </div>
+              <div class="form-group">
+                <label for="email">Your Email</label>
+                <input type="email" id="email" placeholder="john@example.com" required />
+              </div>
+            </div>
+
+            <div class="form-group kinetic-line">
+              <label for="subject">Subject / Inquiry</label>
+              <input type="text" id="subject" placeholder="Android / AWS / AI Project Collaboration" required />
+            </div>
+
+            <div class="form-group kinetic-line">
+              <label for="message">Message</label>
+              <textarea id="message" rows="4" placeholder="Tell me about your vision or technical requirements..."
+                required></textarea>
+            </div>
+
+            <button type="submit" class="btn-editorial-coral kinetic-line"
+              style="width: 100%; justify-content: center; padding: 14px; font-size: 1rem;">
+              SEND MESSAGE
+            </button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="footer-container scroll-in-out kinetic-line">
+        <p>© 2026 Atanu Biswas. All rights reserved.</p>
+        <div class="footer-links">
+          <a href="https://github.com/atanucsejgec" target="_blank" rel="noopener noreferrer">GitHub</a>
+          <a href="https://www.linkedin.com/in/atanucsejgec" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+          <a href="https://t.me/Atanucse" target="_blank" rel="noopener noreferrer">Telegram</a>
+          <a href="mailto:atanubiswas7450@gmail.com">Email</a>
+        </div>
+      </div>
+    </footer>
+
+  </div>
+
+  <script src="script.js"></script>
+  <!-- Grid View Scale (Temporary Inspector) -->
+  <script src="grid-overlay.js"></script>
+</body>
+
+</html>
