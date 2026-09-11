@@ -1,11 +1,12 @@
 // Grid View Scale & Scroll Position Inspector
 (function () {
-  let isVisible = true;
+  let isVisible = false;
   let lastPinnedData = null;
 
   // Create Overlay Elements
   const overlay = document.createElement('div');
   overlay.id = 'grid-scale-overlay';
+  overlay.className = 'hidden';
   overlay.innerHTML = `
     <!-- SVG Grid Lines -->
     <svg class="grid-svg-layer" xmlns="http://www.w3.org/2000/svg">
@@ -60,6 +61,7 @@
   // HUD Box
   const hud = document.createElement('div');
   hud.className = 'grid-hud';
+  hud.style.display = 'none';
   hud.innerHTML = `
     <div class="hud-header">
       <div class="hud-title">
@@ -97,7 +99,7 @@
   const toggleBtn = document.createElement('button');
   toggleBtn.className = 'grid-toggle-btn';
   toggleBtn.id = 'btn-grid-toggle';
-  toggleBtn.innerHTML = `📏 Grid Scale: <strong>ON</strong>`;
+  toggleBtn.innerHTML = `📏 Grid Scale: <strong>OFF</strong>`;
 
   document.body.appendChild(overlay);
   document.body.appendChild(hud);
